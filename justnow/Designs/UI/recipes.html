@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recipes App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+            <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="home.html">Logout</a>
+                        </div>
+                        
+                    </div>
+                </nav>
+        <br>
+       
+        <div class="panel-group">
+            <div class="panel panel-primary">
+
+                <div class="panel-heading">Recipes</div>
+
+                <div class="panel-body">
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#myModal">Add Recipe</button>
+                    <hr>
+                    <ul class="list-group">
+                        <li class="list-group-item">Katunda</li>
+                        <li class="list-group-item">Milk Tea</li>
+                        <li class="list-group-item ">Black Tea</li>
+                        <li class="list-group-item">African Tea</li>
+                        <li class="list-group-item">Water</li>
+                        
+                    </ul>
+
+                    
+                </div>
+            </div>
+          
+
+
+        </div>
+        <!-- End of panel -->
+
+        <!-- Modal -->
+        <!-- Modal -->
+        <!-- Modal -->
+
+
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+     <form method="post" id="user_form" enctype="multipart/form-data">
+      <div class="modal-content">
+       <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add Recipe</h4>
+       </div>
+       <div class="modal-body">
+        <label>Recipe Title</label>
+        <input type="text" name="first_name" id="first_name" class="form-control" />
+        <br />
+        <label>Ingredients</label>
+        <input type="text" name="last_name" id="last_name" class="form-control" />
+        <br />
+        <label>Select User Image</label>
+        <input type="file" name="user_image" id="user_image" />
+        <span id="user_uploaded_image"></span>
+       </div>
+       <div class="modal-footer">
+        <input type="hidden" name="user_id" id="user_id" />
+        <input type="hidden" name="operation" id="operation" />
+        <input type="submit" name="action" id="action" class="btn btn-primary" value="Add" />
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
